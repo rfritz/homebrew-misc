@@ -1,2 +1,2 @@
 # homebrew-misc
-Miscellaneous
+Miscellaneous Homebrew formulae and taps
