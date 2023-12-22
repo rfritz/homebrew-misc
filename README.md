@@ -1,2 +1,2 @@
 # homebrew-misc
-Homebrew tap for miscellaneous formulae
+Randolph's Homebrew tap for miscellaneous formulae
