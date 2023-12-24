@@ -9,6 +9,9 @@ class Vgrind < Formula
   license "BSD-2-Clause"
 
   depends_on "cmake" => :build
+  # This might not be necessary, but the version provided with macOS
+  # is nearly two decades old
+  depends_on "groff"            
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
