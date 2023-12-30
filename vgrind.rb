@@ -4,8 +4,8 @@
 class Vgrind < Formula
   desc "The venerable BSD prettyprinter"
   homepage "https://github.com/rfritz/vgrind"
-  url "https://github.com/rfritz/vgrind/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "b136df845d3bc6be9c84a280a16982e6cccbd3c986b81bba7031cea887261892"
+  url "https://github.com/rfritz/vgrind/archive/refs/tags/v2.1.1.tar.gz"
+  sha256 "c8f08423e9c75104efb15c5adb36cc7832f84dbf2a77624eb2c6211992b99630"
   license "BSD-2-Clause"
 
   depends_on "cmake" => :build
