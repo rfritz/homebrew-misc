@@ -4,8 +4,8 @@
 class Vgrind < Formula
   desc "The venerable BSD prettyprinter"
   homepage "https://github.com/rfritz/vgrind"
-  url "https://github.com/rfritz/vgrind/archive/refs/tags/v2.1.1.tar.gz"
-  sha256 "c8f08423e9c75104efb15c5adb36cc7832f84dbf2a77624eb2c6211992b99630"
+  url "https://github.com/rfritz/vgrind/archive/refs/tags/v2.1.2.tar.gz"
+  sha256 "df6676eb173449d4660fd7d0963ecbdd4bb7aa1b7c48fb46e72b17a765682b30"
   license "BSD-2-Clause"
 
   depends_on "cmake" => :build
@@ -23,15 +23,9 @@ class Vgrind < Formula
   test do
     # `test do` will create, run in and delete a temporary directory.
     #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test vgrind`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     # This script really ought to return error if the input file doesn't exist
-    # system bin/"pprint", "-lcsh", bin/"pprint"
-    system "false"
+    system "#{bin}/pprint", "-lcsh","#{bin}/pprint"
   end
 end
