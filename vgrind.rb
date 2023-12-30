@@ -1,6 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Vgrind < Formula
   desc "The venerable BSD prettyprinter"
   homepage "https://github.com/rfritz/vgrind"
@@ -21,11 +18,6 @@ class Vgrind < Formula
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
-    # This script really ought to return error if the input file doesn't exist
     system "#{bin}/pprint", "-lcsh","#{bin}/pprint"
   end
 end
