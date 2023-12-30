@@ -4,13 +4,13 @@
 class Vgrind < Formula
   desc "The venerable BSD prettyprinter"
   homepage "https://github.com/rfritz/vgrind"
-  url "https://github.com/rfritz/vgrind/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "209da075365b255d51b2b7efb0c3ffdfb8ccef8d3019fe008e810ba4094fd1c4"
+  url "https://github.com/rfritz/vgrind/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "b136df845d3bc6be9c84a280a16982e6cccbd3c986b81bba7031cea887261892"
   license "BSD-2-Clause"
 
   depends_on "cmake" => :build
-  # This might not be necessary, but the version provided with macOS
-  # is nearly two decades old
+  # some versions of macOS provide this, others don't.  Require the
+  # Homebrew version, just in case.
   depends_on "groff"            
 
   def install
@@ -30,6 +30,8 @@ class Vgrind < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
+    # This script really ought to return error if the input file doesn't exist
+    # system bin/"pprint", "-lcsh", bin/"pprint"
     system "false"
   end
 end
