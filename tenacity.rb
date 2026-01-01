@@ -11,7 +11,7 @@ class Tenacity < Formula
   depends_on "cmake" => :build
   depends_on "lilv"
   depends_on "libid3tag"
-  depends_on "libmad-tenacity"
+  depends_on "libmad-ten"
   depends_on "twolame"
   depends_on "libsoxr"
   depends_on "sound-touch"
